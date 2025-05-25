@@ -376,7 +376,7 @@ return {
             end
             local change_lines = vim.split(file_diff.change, '\n')
             for i, line in ipairs(change_lines) do
-              table.insert(modified, start_idx + i, line)
+              table.insert(modified, start_idx + i - 1, line)
             end
           end
 
